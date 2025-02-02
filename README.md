@@ -51,7 +51,7 @@ MONGO_URI=mongodb://localhost/Notes
 PORT=9000
 ### 5. Start the server:
 npm start
-Note Routes:
+### Note Routes:
 GET /http://localhost:9000/notes/: Retrieve all notes for the authenticated user.
 POST http://localhost:9000/notes/: Create a new note.
 GET http://localhost:9000/notes/1: Retrieve a single note by ID.
