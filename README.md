@@ -19,8 +19,15 @@ API Testing: Postman
 To set up and run the backend locally, follow these steps:
 
 ### 1. Clone the repository:
-git clone https://github.cs/:id: Delete a note by ID.
+git clone https://github.com/PratibhaBorude/Note-Taking-App.git
+### 2. Navigate to the project directory:
+cd Note-Taking-App
+### 3. Install dependencies:
+npm install
 
+
+
+ 
 Example Request Using Postman:
 To test the API with Postman, follow these steps:
 
@@ -38,4 +45,18 @@ Access the Notes API:
 
 Use http://localhost:9000/notes/id as the base URL for all routes related to notes.
 Example: To retrieve all notes, send a GET request to http://localhost:9000/notes/.
+### 4. Set up environment variables:
+Create a .env file in the root directory of your project and add the following configuration:
+MONGO_URI=mongodb://localhost/Notes
+PORT=9000
+### 5. Start the server:
+npm start
+Note Routes:
+GET /http://localhost:9000/notes/: Retrieve all notes for the authenticated user.
+POST http://localhost:9000/notes/: Create a new note.
+GET http://localhost:9000/notes/1: Retrieve a single note by ID.
+PUT http://localhost:9000/notes/1: Update an existing note.
+DELETE http://localhost:9000/notes/1: Delete a note by ID.
+
+
    
